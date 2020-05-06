@@ -39,5 +39,5 @@ app.get("/api/whoami", (req, res) => {
   const lang = req.headers["accept-language"];
   //and system infos (from header User-Agent) for my device.
   const syst = req.headers["user-agent"];
-  res.json({"ipaddress": ipAddress, "language": lang, "system": syst});
+  res.json({"ipaddress": ipAddress, "language": lang, "software": syst});
 });
